@@ -1,0 +1,123 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// ─── Enums ───────────────────────────────────────────────
+
+enum OrderStatus {
+  PENDING
+  PAID
+  TRADE_SENT
+  TRADE_ACCEPTED
+  COMPLETED
+  FAILED
+  CANCELLED
+}
+
+enum TransactionType {
+  PAYMENT
+  PURCHASE
+  REFUND
+}
+
+enum TransactionStatus {
+  PENDING
+  COMPLETED
+  FAILED
+}
+
+// ─── Models ──────────────────────────────────────────────
+
+model User {
+  id          String   @id @default(cuid())
+  steamId     String   @unique
+  displayName String
+  avatar      String
+  tradeUrl    String?
+  balance     Decimal  @default(0) @db.Decimal(10, 2)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  orders       Order[]
+  transactions Transaction[]
+
+  @@map("users")
+}
+
+model Item {
+  id             String   @id @default(cuid())
+  assetId        String   @unique
+  classId        String?
+  instanceId     String?
+  name           String
+  marketHashName String
+  iconUrl        String
+  rarity         String
+  exterior       String?
+  type           String
+  price          Decimal  @db.Decimal(10, 2)
+  steamPrice     Decimal  @db.Decimal(10, 2)
+  isAvailable    Boolean  @default(true)
+  botSteamId     String
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  orderItems OrderItem[]
+
+  @@index([isAvailable])
+  @@index([type])
+  @@index([rarity])
+  @@index([price])
+  @@index([marketHashName])
+  @@map("items")
+}
+
+model Order {
+  id           String      @id @default(cuid())
+  userId       String
+  status       OrderStatus @default(PENDING)
+  totalPrice   Decimal     @db.Decimal(10, 2)
+  tradeOfferId String?
+  paidAt       DateTime?
+  completedAt  DateTime?
+  createdAt    DateTime    @default(now())
+  updatedAt    DateTime    @updatedAt
+
+  user  User        @relation(fields: [userId], references: [id])
+  items OrderItem[]
+
+  @@index([userId])
+  @@index([status])
+  @@map("orders")
+}
+
+model OrderItem {
+  id              String  @id @default(cuid())
+  orderId         String
+  itemId          String
+  priceAtPurchase Decimal @db.Decimal(10, 2)
+
+  order Order @relation(fields: [orderId], references: [id])
+  item  Item  @relation(fields: [itemId], references: [id])
+
+  @@map("order_items")
+}
+
+model Transaction {
+  id              String            @id @default(cuid())
+  userId          String
+  type            TransactionType
+  amount          Decimal           @db.Decimal(10, 2)
+  status          TransactionStatus @default(PENDING)
+  stripeSessionId String?
+  createdAt       DateTime          @default(now())
+
+  user User @relation(fields: [userId], references: [id])
+
+  @@index([userId])
+  @@map("transactions")
+}
