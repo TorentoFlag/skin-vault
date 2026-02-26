@@ -8,7 +8,6 @@ import ruProduct from './locales/ru/product.json';
 import ruCart from './locales/ru/cart.json';
 import ruWishlist from './locales/ru/wishlist.json';
 import ruFaq from './locales/ru/faq.json';
-import ruExchange from './locales/ru/exchange.json';
 import ruErrors from './locales/ru/errors.json';
 import ruFooter from './locales/ru/footer.json';
 
@@ -19,7 +18,6 @@ import enProduct from './locales/en/product.json';
 import enCart from './locales/en/cart.json';
 import enWishlist from './locales/en/wishlist.json';
 import enFaq from './locales/en/faq.json';
-import enExchange from './locales/en/exchange.json';
 import enErrors from './locales/en/errors.json';
 import enFooter from './locales/en/footer.json';
 
@@ -44,7 +42,6 @@ i18n.use(initReactI18next).init({
       cart: ruCart,
       wishlist: ruWishlist,
       faq: ruFaq,
-      exchange: ruExchange,
       errors: ruErrors,
       footer: ruFooter,
     },
@@ -56,7 +53,6 @@ i18n.use(initReactI18next).init({
       cart: enCart,
       wishlist: enWishlist,
       faq: enFaq,
-      exchange: enExchange,
       errors: enErrors,
       footer: enFooter,
     },
@@ -64,7 +60,7 @@ i18n.use(initReactI18next).init({
   lng: getSavedLanguage(),
   fallbackLng: 'ru',
   defaultNS: 'common',
-  ns: ['common', 'home', 'marketplace', 'product', 'cart', 'wishlist', 'faq', 'exchange', 'errors', 'footer'],
+  ns: ['common', 'home', 'marketplace', 'product', 'cart', 'wishlist', 'faq', 'errors', 'footer'],
   interpolation: {
     escapeValue: false,
   },

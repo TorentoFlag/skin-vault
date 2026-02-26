@@ -12,7 +12,6 @@ import { Cart } from './pages/Cart/Cart';
 import { Wishlist } from './pages/Wishlist/Wishlist';
 import { NotFound } from './pages/NotFound/NotFound';
 import { FAQ } from './pages/FAQ/FAQ';
-import { Exchange } from './pages/Exchange/Exchange';
 import { AuthCallback } from './pages/AuthCallback/AuthCallback';
 import { useAuthStore } from './store/useAuthStore';
 import { useProductsInit } from './hooks/useProducts';
@@ -28,7 +27,6 @@ function AppRoutes() {
         <Route path="/product/:id" element={<ProductDetail />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/wishlist" element={<Wishlist />} />
-        <Route path="/exchange" element={<Exchange />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/auth/callback" element={<AuthCallback />} />
         <Route path="*" element={<NotFound />} />

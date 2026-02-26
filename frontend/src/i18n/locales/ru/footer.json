@@ -11,13 +11,12 @@
   "support": {
     "title": "Поддержка",
     "faq": "FAQ",
-    "howToBuy": "Как купить",
-    "steamTrade": "Steam Trade"
+    "howToBuy": "Как купить"
   },
   "why": {
     "title": "Почему SkinVault?",
     "steamVerification": { "label": "Верификация Steam", "desc": "Все сделки через Steam" },
     "instantDelivery": { "label": "Мгновенная доставка", "desc": "Обмен за несколько минут" },
-    "deals": { "label": "1M+ сделок", "desc": "Доверенное сообщество" }
+    "deals": { "label": "20K+ сделок", "desc": "Доверенное сообщество" }
   }
 }

@@ -1,7 +1,7 @@
 import { useState, useMemo, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FiSearch, FiUser, FiRepeat, FiShoppingBag, FiChevronDown, FiMenu, FiX } from 'react-icons/fi';
+import { FiSearch, FiUser, FiShoppingBag, FiChevronDown, FiMenu, FiX } from 'react-icons/fi';
 import { Input } from '../../components/common/Input/Input';
 import { useTranslation } from 'react-i18next';
 
@@ -19,13 +19,12 @@ interface FaqSection {
 
 const SECTION_ICONS: Record<string, React.ReactNode> = {
   auth: <FiUser size={18} />,
-  exchange: <FiRepeat size={18} />,
   market: <FiShoppingBag size={18} />,
   exchange_block: <FiShoppingBag size={18} />,
   prices: <FiShoppingBag size={18} />,
 };
 
-const SECTION_IDS = ['auth', 'exchange', 'market', 'exchange_block', 'prices'] as const;
+const SECTION_IDS = ['auth', 'market', 'exchange_block', 'prices'] as const;
 
 function AccordionItem({ item, isOpen, onToggle }: { item: FaqItem; isOpen: boolean; onToggle: () => void }) {
   return (

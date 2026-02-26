@@ -1,6 +1,6 @@
 import { useState, useMemo } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
-import { FiMenu, FiX, FiSearch, FiShoppingCart, FiHeart, FiHome, FiGrid, FiRefreshCw, FiHelpCircle, FiLogOut } from 'react-icons/fi';
+import { FiMenu, FiX, FiSearch, FiShoppingCart, FiHeart, FiHome, FiGrid, FiHelpCircle, FiLogOut } from 'react-icons/fi';
 import { SiSteam } from 'react-icons/si';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useCartStore } from '../../../store/useCartStore';
@@ -192,9 +192,6 @@ export function HeaderMobile() {
                 </Link>
                 <Link to="/marketplace" onClick={() => setMenuOpen(false)} className={`flex items-center gap-3 px-4 py-3 rounded-xl hover:text-white hover:bg-[#252540] transition ${pathname === '/marketplace' ? 'text-white bg-[#252540]' : 'text-[#a0a0b0]'}`}>
                   <FiGrid size={18} /> {t('nav.shop')}
-                </Link>
-                <Link to="/exchange" onClick={() => setMenuOpen(false)} className={`flex items-center gap-3 px-4 py-3 rounded-xl hover:text-white hover:bg-[#252540] transition ${pathname === '/exchange' ? 'text-white bg-[#252540]' : 'text-[#a0a0b0]'}`}>
-                  <FiRefreshCw size={18} /> {t('nav.exchange')}
                 </Link>
                 <Link to="/wishlist" onClick={() => setMenuOpen(false)} className={`flex items-center gap-3 px-4 py-3 rounded-xl hover:text-white hover:bg-[#252540] transition ${pathname === '/wishlist' ? 'text-white bg-[#252540]' : 'text-[#a0a0b0]'}`}>
                   <FiHeart size={18} /> {t('nav.wishlist')}

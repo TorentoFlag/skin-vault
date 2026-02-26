@@ -92,18 +92,14 @@ export function HeaderDesktop() {
             {t('nav.market')}
             <span className={`absolute -bottom-1 left-0 h-0.5 bg-[#00d9ff] transition-all duration-200 ${pathname === '/marketplace' ? 'w-full' : 'w-0 group-hover:w-full'}`} />
           </Link>
-          <Link to="/exchange" className={`hover:text-[#00d9ff] transition-colors duration-200 text-sm font-medium relative group ${pathname === '/exchange' ? 'text-[#00d9ff]' : ''}`}>
-            {t('nav.exchange')}
-            <span className={`absolute -bottom-1 left-0 h-0.5 bg-[#00d9ff] transition-all duration-200 ${pathname === '/exchange' ? 'w-full' : 'w-0 group-hover:w-full'}`} />
-          </Link>
           <Link to="/faq" className={`hover:text-[#00d9ff] transition-colors duration-200 text-sm font-medium relative group ${pathname === '/faq' ? 'text-[#00d9ff]' : ''}`}>
             {t('nav.faq')}
             <span className={`absolute -bottom-1 left-0 h-0.5 bg-[#00d9ff] transition-all duration-200 ${pathname === '/faq' ? 'w-full' : 'w-0 group-hover:w-full'}`} />
           </Link>
         </nav>
 
-        {/* Search (hidden on marketplace — it has its own) */}
-        {pathname !== '/marketplace' && <div ref={wrapperRef} className="hidden laptop:flex flex-1 max-w-[400px] relative">
+        {/* Search (invisible on marketplace — it has its own, but keeps space) */}
+        <div ref={wrapperRef} className={`hidden laptop:flex flex-1 max-w-[400px] relative ${pathname === '/marketplace' ? 'invisible pointer-events-none' : ''}`}>
           <form onSubmit={handleSearch} className="w-full">
             <div className="relative w-full">
               <FiSearch className="absolute left-3 top-1/2 -translate-y-1/2 text-[#6b6b7b]" size={16} />
@@ -159,7 +155,7 @@ export function HeaderDesktop() {
               )}
             </div>
           )}
-        </div>}
+        </div>
 
         {/* Actions */}
         <div className="flex items-center gap-3">

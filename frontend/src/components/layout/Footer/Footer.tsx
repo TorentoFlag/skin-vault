@@ -55,7 +55,6 @@ export function Footer() {
               {[
                 { label: t('support.faq'), path: '/faq' },
                 { label: t('support.howToBuy'), path: '/faq?section=market' },
-                { label: t('support.steamTrade'), path: '/faq?section=exchange' },
               ].map(item => (
                 <li key={item.label}>
                   <button onClick={() => navigate(item.path)} className="text-[#6b6b7b] hover:text-[#00d9ff] transition text-sm">{item.label}</button>

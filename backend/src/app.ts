@@ -17,6 +17,9 @@ import type { Request, Response } from 'express';
 
 const app = express();
 
+// Trust Nginx proxy (needed for correct IP in rate limiting)
+app.set('trust proxy', 1);
+
 // Security
 app.use(helmet());
 app.use(cors({

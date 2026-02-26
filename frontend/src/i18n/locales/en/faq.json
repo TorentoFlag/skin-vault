@@ -29,27 +29,6 @@
         }
       ]
     },
-    "exchange": {
-      "title": "Exchange Mode",
-      "items": [
-        {
-          "question": "How does the exchange mode work?",
-          "answer": "Exchange mode allows you to trade your skins for skins from other users. Select skins from your inventory, find a suitable offer, and send an exchange request. Both participants must confirm the exchange through Steam."
-        },
-        {
-          "question": "What is the exchange commission?",
-          "answer": "The exchange commission is 5% of the total exchange value. The commission is charged to the exchange initiator. When exchanging skins of equal value, the commission is minimal."
-        },
-        {
-          "question": "How long does an exchange take?",
-          "answer": "After confirmation by both parties, the exchange is processed within a few minutes. If both participants have disabled trade hold in Steam, skins will be transferred instantly. Otherwise, it may take up to 15 days."
-        },
-        {
-          "question": "Can I cancel an exchange?",
-          "answer": "You can cancel an exchange as long as the other participant hasn't confirmed it. After both parties confirm, cancellation is impossible. If the exchange is on trade hold, you can cancel it at any time before the waiting period ends."
-        }
-      ]
-    },
     "market": {
       "title": "Market",
       "items": [

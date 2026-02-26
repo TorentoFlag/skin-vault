@@ -5,7 +5,7 @@ import { env } from './env.ts';
 passport.use(
   new SteamStrategy(
     {
-      returnURL: `${env.CLIENT_URL}/auth/steam/callback`,
+      returnURL: `${env.CLIENT_URL}/api/auth/steam/callback`,
       realm: `${env.CLIENT_URL}/`,
       apiKey: env.STEAM_API_KEY,
     },
