@@ -1,0 +1,101 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      screens: {
+        'mobile': '320px',
+        'mobile-lg': '480px',
+        'tablet': '768px',
+        'laptop': '1024px',
+        'desktop': '1440px',
+        'desktop-xl': '1920px',
+      },
+      colors: {
+        'bg-primary': '#0f0f1a',
+        'bg-secondary': '#1a1a2e',
+        'bg-tertiary': '#16213e',
+        'card-primary': '#252540',
+        'card-secondary': '#2d2d44',
+        'accent-primary': '#00d9ff',
+        'accent-secondary': '#ff6b6b',
+        'accent-success': '#00ff88',
+        'accent-warning': '#ffa500',
+        'text-primary': '#ffffff',
+        'text-secondary': '#a0a0b0',
+        'text-muted': '#6b6b7b',
+        'border-primary': '#3a3a5a',
+        'border-secondary': '#2a2a3a',
+        'rarity-covert': '#ff4444',
+        'rarity-classified': '#ff44ff',
+        'rarity-restricted': '#aa44ff',
+        'rarity-milspec': '#4444ff',
+        'rarity-industrial': '#44aaff',
+        'rarity-consumer': '#b0c3d9',
+      },
+      fontFamily: {
+        'exo2': ['"Exo 2"', 'sans-serif'],
+        'inter': ['Inter', 'sans-serif'],
+        'orbitron': ['Orbitron', 'sans-serif'],
+      },
+      spacing: {
+        '1': '4px',
+        '2': '8px',
+        '3': '12px',
+        '4': '16px',
+        '5': '24px',
+        '6': '32px',
+        '7': '48px',
+        '8': '64px',
+      },
+      backgroundImage: {
+        'gradient-hero': 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)',
+        'gradient-card': 'linear-gradient(145deg, #252540 0%, #1f1f3a 100%)',
+        'gradient-button': 'linear-gradient(90deg, #00d9ff 0%, #00ff88 100%)',
+      },
+      boxShadow: {
+        'card': '0 10px 25px rgba(0,0,0,0.3)',
+        'hover': '0 20px 40px rgba(0,217,255,0.15)',
+        'glow': '0 0 20px rgba(0,217,255,0.4)',
+        'glow-lg': '0 0 30px rgba(0,217,255,0.6)',
+        'glow-green': '0 0 20px rgba(0,255,136,0.4)',
+        'glow-red': '0 0 20px rgba(255,68,68,0.4)',
+      },
+      animation: {
+        'pulse-glow': 'pulseGlow 2s ease-in-out infinite',
+        'skeleton': 'skeleton 1.5s ease-in-out infinite',
+        'float': 'float 3s ease-in-out infinite',
+        'slide-in': 'slideIn 0.3s ease-out',
+        'fade-in': 'fadeIn 0.3s ease-out',
+      },
+      keyframes: {
+        pulseGlow: {
+          '0%': { boxShadow: '0 0 10px rgba(0,217,255,0.3)' },
+          '50%': { boxShadow: '0 0 25px rgba(0,217,255,0.6)' },
+          '100%': { boxShadow: '0 0 10px rgba(0,217,255,0.3)' },
+        },
+        skeleton: {
+          '0%': { opacity: '0.5' },
+          '50%': { opacity: '1' },
+          '100%': { opacity: '0.5' },
+        },
+        float: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-10px)' },
+        },
+        slideIn: {
+          from: { transform: 'translateX(100%)', opacity: '0' },
+          to: { transform: 'translateX(0)', opacity: '1' },
+        },
+        fadeIn: {
+          from: { opacity: '0', transform: 'translateY(10px)' },
+          to: { opacity: '1', transform: 'translateY(0)' },
+        },
+      },
+    },
+  },
+  plugins: [],
+}

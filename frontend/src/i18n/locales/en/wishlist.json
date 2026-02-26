@@ -1,0 +1,9 @@
+{
+  "title": "Wishlist",
+  "saved": "saved",
+  "totalValue": "Total value: {{value}}",
+  "empty": {
+    "title": "Wishlist is Empty",
+    "desc": "Save skins you like by clicking the heart icon"
+  }
+}

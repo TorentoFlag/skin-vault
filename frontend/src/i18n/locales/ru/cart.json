@@ -1,0 +1,22 @@
+{
+  "title": "Корзина",
+  "items": "товаров",
+  "empty": {
+    "title": "Корзина пуста",
+    "desc": "Добавьте скины, чтобы начать",
+    "descPage": "Просматривайте магазин, чтобы найти свой следующий скин"
+  },
+  "subtotal": "Подытог",
+  "total": "Итого",
+  "checkout": "Оформить заказ — {{price}}",
+  "checkoutSteam": "Оформить через Steam",
+  "buyNow": "Купить",
+  "orderSummary": "Итог заказа",
+  "commission": "Комиссия (0%)",
+  "free": "Бесплатно",
+  "trust": {
+    "steamProtection": "Защита Steam Trade",
+    "instantDelivery": "Мгновенная доставка",
+    "securePayment": "Безопасная оплата"
+  }
+}

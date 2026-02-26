@@ -1,0 +1,25 @@
+{
+  "notFound": {
+    "title": "Skin Not Found",
+    "desc": "This skin may have been sold or removed.",
+    "action": "Back to Shop"
+  },
+  "breadcrumbs": {
+    "home": "Home",
+    "marketplace": "Marketplace"
+  },
+  "addedToCart": "Added to cart!",
+  "addedToCartName": "{{name}} added to cart",
+  "buyFor": "Buy — {{price}}",
+  "characteristics": {
+    "condition": "Condition",
+    "floatValue": "Float Value",
+    "rarity": "Rarity",
+    "collection": "Collection"
+  },
+  "inStockDelivery": "In Stock • Instant Delivery",
+  "priceHistory": "Price History (30 days)",
+  "priceLabel": "Price",
+  "similarSkins": "Similar Skins",
+  "off": "-{{discount}}% off"
+}

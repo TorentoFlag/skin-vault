@@ -1,0 +1,117 @@
+{
+  "title": "Frequently Asked Questions",
+  "subtitle": "Find answers to popular questions",
+  "searchResults": {
+    "found": "Found",
+    "resultsFor": "results for",
+    "nothing": "Nothing found",
+    "tryAnother": "Try changing your search query"
+  },
+  "sections": {
+    "auth": {
+      "title": "Authorization",
+      "items": [
+        {
+          "question": "How do I sign in to the site?",
+          "answer": "To sign in, click the \"Sign In\" button in the top right corner. You can sign in with your Steam account — it's the fastest and most secure method. After clicking, you'll be redirected to the Steam authorization page where you need to enter your Steam username and password."
+        },
+        {
+          "question": "Is it safe to sign in with Steam?",
+          "answer": "Yes, it's completely safe. We use the official OpenID protocol from Valve. Your password is entered only on the official Steam website — we never receive or store your password. After authorization, we only receive your public profile and SteamID."
+        },
+        {
+          "question": "Can I sign in without Steam?",
+          "answer": "Currently, authorization is only available via Steam account. This is necessary to verify your identity and link your inventory. In the future, we plan to add additional authorization methods."
+        },
+        {
+          "question": "What should I do if I can't sign in?",
+          "answer": "Make sure your Steam profile is not private. Check that Steam Guard is activated. If the problem persists, try clearing your browser cache or using a different browser. If nothing helps, contact our support team."
+        }
+      ]
+    },
+    "exchange": {
+      "title": "Exchange Mode",
+      "items": [
+        {
+          "question": "How does the exchange mode work?",
+          "answer": "Exchange mode allows you to trade your skins for skins from other users. Select skins from your inventory, find a suitable offer, and send an exchange request. Both participants must confirm the exchange through Steam."
+        },
+        {
+          "question": "What is the exchange commission?",
+          "answer": "The exchange commission is 5% of the total exchange value. The commission is charged to the exchange initiator. When exchanging skins of equal value, the commission is minimal."
+        },
+        {
+          "question": "How long does an exchange take?",
+          "answer": "After confirmation by both parties, the exchange is processed within a few minutes. If both participants have disabled trade hold in Steam, skins will be transferred instantly. Otherwise, it may take up to 15 days."
+        },
+        {
+          "question": "Can I cancel an exchange?",
+          "answer": "You can cancel an exchange as long as the other participant hasn't confirmed it. After both parties confirm, cancellation is impossible. If the exchange is on trade hold, you can cancel it at any time before the waiting period ends."
+        }
+      ]
+    },
+    "market": {
+      "title": "Market",
+      "items": [
+        {
+          "question": "How do I buy a skin on the market?",
+          "answer": "Find the skin you need using search or filters. Click on the card to see detailed information. If the price suits you, click \"Add to Cart\" and proceed to checkout. After payment, the skin will be sent to your Steam inventory."
+        },
+        {
+          "question": "What payment methods are available?",
+          "answer": "We accept bank cards (Visa, MasterCard), e-wallets, cryptocurrency (BTC, ETH, USDT), and Steam balance. All payments are processed through secure payment systems."
+        },
+        {
+          "question": "How do I list my skin for sale?",
+          "answer": "Go to \"My Inventory\", select the skin you want to sell, and set your desired price. The skin will be automatically listed on the market. When a buyer makes a purchase, you'll receive funds to your balance minus the commission."
+        },
+        {
+          "question": "What is the selling commission?",
+          "answer": "The selling commission is 7% of the sale price. The commission is automatically deducted when crediting funds to your balance. Regular sellers with high volume are eligible for commission discounts."
+        },
+        {
+          "question": "How quickly will I receive a skin after purchase?",
+          "answer": "In most cases, the skin is sent to your inventory within 1-5 minutes after payment. In rare cases, delivery may take up to 1 hour. If the skin hasn't arrived within an hour, contact support."
+        }
+      ]
+    },
+    "exchange_block": {
+      "title": "Trade Lock",
+      "items": [
+        {
+          "question": "I accepted a trade for items with trade lock, how do I withdraw them to Steam?",
+          "answer": "After confirming the trade for an item with trade lock, your new item will appear in your virtual inventory on the site. The item has a timer indicating when you'll be able to withdraw the item to your Steam inventory."
+        },
+        {
+          "question": "Why does it say the item is in inventory, but it's not in my Steam inventory?",
+          "answer": "Most likely, you made a trade for an item with a Steam trade lock. When purchasing or exchanging any item with a Steam trade lock on our site, you receive a virtual copy in your site inventory. The item has a timer showing when you can withdraw it to your Steam inventory."
+        },
+        {
+          "question": "Why can't I receive all items in one trade?",
+          "answer": "If you selected multiple items from our inventory, they are most likely on different bots. In this case, you'll receive the first trade with one or more items from one bot. After confirming the first trade in Steam, the remaining bots will send you trades with the missing items. This is due to the 7-day CS:GO item trade lock. We can't send all items in one trade because Steam will lock these items for 7 days after we send them to one of our bots."
+        },
+        {
+          "question": "How long do I have to withdraw an item from the site?",
+          "answer": "After the virtual item comes out of hold, you'll have 45 days to withdraw the item. If there are technical problems with the item, you'll receive compensation equal to its value."
+        }
+      ]
+    },
+    "prices": {
+      "title": "Prices",
+      "items": [
+        {
+          "question": "How do you set prices? Why are my items cheaper than on Steam?",
+          "answer": "All prices are automatically set by our system. The price depends on many factors such as: item type, quality, StatTrak™ availability, popularity among players, demand on trading platforms, etc. Our pricing policy does not directly depend on other sites, including Steam Community Market."
+        },
+        {
+          "question": "Why did my item drop in price after a trade?",
+          "answer": "Your item's price may decrease for one of the following reasons:\nBase commission — our bot items cost 7% more than user items; Trade lock markup — items with trade lock have an additional commission depending on the number of lock days (from 0 to 13%);\nCommission on items that just came out of trade lock — items that just came out of Steam trade lock also have an additional commission. It is fully removed 6 days after unlocking."
+        },
+        {
+          "question": "Do you overpay for stickers or Float? Why doesn't my item have markups?",
+          "answer": "Our site does offer overpay for items with rare stickers, patterns, and Float Value. The markup is set automatically by our system and may depend on many factors such as: the item itself, its popularity among players, sticker price, sticker position, rarity of the item with this sticker, etc."
+        }
+      ]
+    }
+  }
+}

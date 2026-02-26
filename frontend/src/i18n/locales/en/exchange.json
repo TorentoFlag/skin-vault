@@ -1,0 +1,11 @@
+{
+  "title": "Skin Exchange",
+  "desc": "Exchange your skins with other players directly. Secure trades via Steam Trade with minimal commission.",
+  "authRequired": "Authorization Required",
+  "authDesc": "Sign in with Steam to access skin exchange",
+  "features": {
+    "p2p": { "title": "P2P Exchange", "desc": "Directly between players" },
+    "security": { "title": "Security", "desc": "Via Steam Trade API" },
+    "fast": { "title": "Fast", "desc": "Exchange in minutes" }
+  }
+}

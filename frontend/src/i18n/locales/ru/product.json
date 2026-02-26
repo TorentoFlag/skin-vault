@@ -1,0 +1,25 @@
+{
+  "notFound": {
+    "title": "Скин не найден",
+    "desc": "Этот скин мог быть продан или удалён.",
+    "action": "Вернуться в магазин"
+  },
+  "breadcrumbs": {
+    "home": "Главная",
+    "marketplace": "Маркетплейс"
+  },
+  "addedToCart": "Добавлено в корзину!",
+  "addedToCartName": "{{name}} добавлен в корзину",
+  "buyFor": "Купить — {{price}}",
+  "characteristics": {
+    "condition": "Состояние",
+    "floatValue": "Значение флоата",
+    "rarity": "Редкость",
+    "collection": "Коллекция"
+  },
+  "inStockDelivery": "В наличии • Мгновенная доставка",
+  "priceHistory": "История цен (30 дней)",
+  "priceLabel": "Цена",
+  "similarSkins": "Похожие скины",
+  "off": "-{{discount}}% off"
+}

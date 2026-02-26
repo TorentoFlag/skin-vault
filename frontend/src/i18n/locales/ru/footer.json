@@ -1,0 +1,23 @@
+{
+  "brand": "Самый надёжный маркетплейс скинов CS:GO. Покупайте и продавайте с уверенностью.",
+  "shop": {
+    "title": "Магазин",
+    "all": "Все скины",
+    "rifles": "Винтовки",
+    "pistols": "Пистолеты",
+    "smgs": "Пистолеты-пулемёты",
+    "heavy": "Тяжёлое"
+  },
+  "support": {
+    "title": "Поддержка",
+    "faq": "FAQ",
+    "howToBuy": "Как купить",
+    "steamTrade": "Steam Trade"
+  },
+  "why": {
+    "title": "Почему SkinVault?",
+    "steamVerification": { "label": "Верификация Steam", "desc": "Все сделки через Steam" },
+    "instantDelivery": { "label": "Мгновенная доставка", "desc": "Обмен за несколько минут" },
+    "deals": { "label": "1M+ сделок", "desc": "Доверенное сообщество" }
+  }
+}

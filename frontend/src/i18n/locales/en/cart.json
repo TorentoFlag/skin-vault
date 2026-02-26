@@ -1,0 +1,22 @@
+{
+  "title": "Cart",
+  "items": "items",
+  "empty": {
+    "title": "Cart is Empty",
+    "desc": "Add skins to get started",
+    "descPage": "Browse the store to find your next skin"
+  },
+  "subtotal": "Subtotal",
+  "total": "Total",
+  "checkout": "Checkout — {{price}}",
+  "checkoutSteam": "Checkout via Steam",
+  "buyNow": "Buy",
+  "orderSummary": "Order Summary",
+  "commission": "Commission (0%)",
+  "free": "Free",
+  "trust": {
+    "steamProtection": "Steam Trade Protection",
+    "instantDelivery": "Instant Delivery",
+    "securePayment": "Secure Payment"
+  }
+}

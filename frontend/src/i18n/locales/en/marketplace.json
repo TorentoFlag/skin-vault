@@ -1,0 +1,6 @@
+{
+  "title": "Market",
+  "skinsAvailable": "{{count}} skins available",
+  "shown": "Showing {{shown}} of {{total}}",
+  "filters": "Filters"
+}

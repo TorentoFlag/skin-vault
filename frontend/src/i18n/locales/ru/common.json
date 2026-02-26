@@ -1,0 +1,90 @@
+{
+  "search": {
+    "placeholder": "Поиск скинов...",
+    "placeholderExtended": "Поиск скинов, оружия...",
+    "noResults": "Ничего не найдено по запросу «{{query}}»",
+    "searchFaq": "Поиск по вопросам..."
+  },
+  "nav": {
+    "market": "Маркет",
+    "exchange": "Обмен",
+    "faq": "FAQ",
+    "home": "Главная",
+    "shop": "Магазин",
+    "wishlist": "Избранное"
+  },
+  "auth": {
+    "loginSteam": "Войти через Steam",
+    "logout": "Выйти",
+    "loading": "Авторизация..."
+  },
+  "sort": {
+    "price_asc": "Цена: по возрастанию",
+    "price_desc": "Цена: по убыванию",
+    "newest": "Сначала новые",
+    "popular": "Популярные",
+    "float_asc": "Float: по возрастанию",
+    "float_desc": "Float: по убыванию"
+  },
+  "filter": {
+    "title": "Фильтры",
+    "reset": "Сбросить",
+    "priceRange": "Диапазон цен",
+    "quality": "Состояние",
+    "rarity": "Редкость",
+    "weapons": "Оружие",
+    "other": "Прочее",
+    "statTrakOnly": "Только StatTrak™",
+    "inStockOnly": "Только в наличии",
+    "qualityLabels": {
+      "FN": "Заводская новая",
+      "MW": "Немного поношенная",
+      "FT": "После полевых испытаний",
+      "WW": "Поношенная",
+      "BS": "Закалённая в боях"
+    }
+  },
+  "actions": {
+    "buy": "Купить",
+    "sold": "Продано",
+    "goToShop": "Перейти в магазин",
+    "goHome": "На главную",
+    "back": "Назад",
+    "continueShopping": "Продолжить покупки",
+    "loadMore": "Загрузить ещё (осталось {{count}})",
+    "showResults": "Показать {{count}} результатов",
+    "viewAll": "Смотреть все",
+    "browseSkins": "Смотреть скины",
+    "viewCatalog": "Смотреть каталог",
+    "howItWorks": "Как это работает",
+    "viewOnSteam": "Смотреть на Steam Market",
+    "addAllToCart": "Добавить всё в корзину",
+    "removeFromWishlist": "Удалить из избранного",
+    "clearCart": "Очистить корзину"
+  },
+  "item_one": "{{count}} товар",
+  "item_few": "{{count}} товара",
+  "item_many": "{{count}} товаров",
+  "skin_one": "{{count}} скин",
+  "skin_few": "{{count}} скина",
+  "skin_many": "{{count}} скинов",
+  "itemsCount_one": "товар",
+  "itemsCount_few": "товара",
+  "itemsCount_many": "товаров",
+  "skinsCount_one": "скин",
+  "skinsCount_few": "скина",
+  "skinsCount_many": "скинов",
+  "product": {
+    "outOfStock": "Нет в наличии",
+    "inStock": "В наличии",
+    "instantDelivery": "Мгновенная доставка",
+    "unknown": "Неизвестно"
+  },
+  "sections": "Разделы",
+  "results_one": "{{count}} результат",
+  "results_few": "{{count}} результата",
+  "results_many": "{{count}} результатов",
+  "questions_one": "{{count}} вопрос",
+  "questions_few": "{{count}} вопроса",
+  "questions_many": "{{count}} вопросов"
+}

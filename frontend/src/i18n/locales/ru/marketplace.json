@@ -1,0 +1,6 @@
+{
+  "title": "Маркет",
+  "skinsAvailable": "{{count}} скинов доступно",
+  "shown": "Показано {{shown}} из {{total}}",
+  "filters": "Фильтры"
+}

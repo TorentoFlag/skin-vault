@@ -1,0 +1,23 @@
+{
+  "brand": "The most trusted CS:GO skins marketplace. Buy and sell with confidence.",
+  "shop": {
+    "title": "Shop",
+    "all": "All Skins",
+    "rifles": "Rifles",
+    "pistols": "Pistols",
+    "smgs": "SMGs",
+    "heavy": "Heavy"
+  },
+  "support": {
+    "title": "Support",
+    "faq": "FAQ",
+    "howToBuy": "How to Buy",
+    "steamTrade": "Steam Trade"
+  },
+  "why": {
+    "title": "Why SkinVault?",
+    "steamVerification": { "label": "Steam Verification", "desc": "All trades via Steam" },
+    "instantDelivery": { "label": "Instant Delivery", "desc": "Exchange in minutes" },
+    "deals": { "label": "1M+ Deals", "desc": "Trusted community" }
+  }
+}

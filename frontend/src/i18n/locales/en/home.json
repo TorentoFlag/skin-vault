@@ -1,0 +1,36 @@
+{
+  "hero": {
+    "badge": "Live marketplace • 5000+ happy users",
+    "titleLine1": "New skins",
+    "titleLine2": "are here",
+    "subtitle": "Buy and sell CS:GO skins at the best prices. Instant delivery, Steam-verified security, and the largest selection of rare skins.",
+    "stats": {
+      "users": "Users",
+      "trades": "Trades",
+      "secure": "Secure"
+    }
+  },
+  "popular": {
+    "title": "Popular Skins",
+    "subtitle": "Most traded items this week"
+  },
+  "newArrivals": {
+    "title": "New",
+    "titleAccent": "Arrivals",
+    "subtitle": "Just added to the store"
+  },
+  "trust": {
+    "steamProtection": {
+      "title": "Steam Protection",
+      "desc": "All transactions are verified through Steam Trade. Your account is always safe."
+    },
+    "instantDelivery": {
+      "title": "Instant Delivery",
+      "desc": "Get your skins within minutes after payment. No waiting or delays."
+    },
+    "bestPrices": {
+      "title": "Best Prices",
+      "desc": "Lowest price guarantee. Found cheaper? We'll match it."
+    }
+  }
+}

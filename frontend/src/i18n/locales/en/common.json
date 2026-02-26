@@ -1,0 +1,84 @@
+{
+  "search": {
+    "placeholder": "Search skins...",
+    "placeholderExtended": "Search skins, weapons...",
+    "noResults": "Nothing found for \"{{query}}\"",
+    "searchFaq": "Search questions..."
+  },
+  "nav": {
+    "market": "Market",
+    "exchange": "Exchange",
+    "faq": "FAQ",
+    "home": "Home",
+    "shop": "Shop",
+    "wishlist": "Wishlist"
+  },
+  "auth": {
+    "loginSteam": "Sign in with Steam",
+    "logout": "Log out",
+    "loading": "Signing in..."
+  },
+  "sort": {
+    "price_asc": "Price: Low to High",
+    "price_desc": "Price: High to Low",
+    "newest": "Newest First",
+    "popular": "Popular",
+    "float_asc": "Float: Low to High",
+    "float_desc": "Float: High to Low"
+  },
+  "filter": {
+    "title": "Filters",
+    "reset": "Reset",
+    "priceRange": "Price Range",
+    "quality": "Condition",
+    "rarity": "Rarity",
+    "weapons": "Weapons",
+    "other": "Other",
+    "statTrakOnly": "StatTrak™ Only",
+    "inStockOnly": "In Stock Only",
+    "qualityLabels": {
+      "FN": "Factory New",
+      "MW": "Minimal Wear",
+      "FT": "Field-Tested",
+      "WW": "Well-Worn",
+      "BS": "Battle-Scarred"
+    }
+  },
+  "actions": {
+    "buy": "Buy",
+    "sold": "Sold",
+    "goToShop": "Go to Shop",
+    "goHome": "Go Home",
+    "back": "Back",
+    "continueShopping": "Continue Shopping",
+    "loadMore": "Load More ({{count}} remaining)",
+    "showResults": "Show {{count}} results",
+    "viewAll": "View All",
+    "browseSkins": "Browse Skins",
+    "viewCatalog": "Browse Catalog",
+    "howItWorks": "How It Works",
+    "viewOnSteam": "View on Steam Market",
+    "addAllToCart": "Add All to Cart",
+    "removeFromWishlist": "Remove from Wishlist",
+    "clearCart": "Clear Cart"
+  },
+  "item_one": "{{count}} item",
+  "item_other": "{{count}} items",
+  "skin_one": "{{count}} skin",
+  "skin_other": "{{count}} skins",
+  "itemsCount_one": "item",
+  "itemsCount_other": "items",
+  "skinsCount_one": "skin",
+  "skinsCount_other": "skins",
+  "product": {
+    "outOfStock": "Out of Stock",
+    "inStock": "In Stock",
+    "instantDelivery": "Instant Delivery",
+    "unknown": "Unknown"
+  },
+  "sections": "Sections",
+  "results_one": "{{count}} result",
+  "results_other": "{{count}} results",
+  "questions_one": "{{count}} question",
+  "questions_other": "{{count}} questions"
+}
