@@ -33,8 +33,8 @@ export const createCheckoutSession = async (
       },
     ],
     metadata: { orderId, userId },
-    success_url: `${env.CLIENT_URL}/orders/${orderId}?status=success`,
-    cancel_url: `${env.CLIENT_URL}/orders/${orderId}?status=cancelled`,
+    success_url: `${env.ALLOWED_ORIGINS.split(',')[0].trim()}/orders/${orderId}?status=success`,
+    cancel_url: `${env.ALLOWED_ORIGINS.split(',')[0].trim()}/orders/${orderId}?status=cancelled`,
     expires_at: Math.floor(Date.now() / 1000) + 1800,
   });
 

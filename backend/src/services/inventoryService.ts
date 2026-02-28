@@ -52,9 +52,9 @@ export const syncInventory = async () => {
 };
 
 interface ItemFilters {
-  type?: string;
-  rarity?: string;
-  exterior?: string;
+  type?: string[];
+  rarity?: string[];
+  exterior?: string[];
   minPrice?: number;
   maxPrice?: number;
   search?: string;
@@ -70,9 +70,15 @@ interface Pagination {
 export const getAvailableItems = async (filters: ItemFilters, pagination: Pagination) => {
   const where: Record<string, unknown> = { isAvailable: true };
 
-  if (filters.type) where.type = filters.type;
-  if (filters.rarity) where.rarity = filters.rarity;
-  if (filters.exterior) where.exterior = filters.exterior;
+  if (filters.type) {
+    where.type = filters.type.length === 1 ? filters.type[0] : { in: filters.type };
+  }
+  if (filters.rarity) {
+    where.rarity = filters.rarity.length === 1 ? filters.rarity[0] : { in: filters.rarity };
+  }
+  if (filters.exterior) {
+    where.exterior = filters.exterior.length === 1 ? filters.exterior[0] : { in: filters.exterior };
+  }
   if (filters.minPrice || filters.maxPrice) {
     where.price = {
       ...(filters.minPrice ? { gte: filters.minPrice } : {}),
@@ -80,7 +86,10 @@ export const getAvailableItems = async (filters: ItemFilters, pagination: Pagina
     };
   }
   if (filters.search) {
-    where.name = { contains: filters.search, mode: 'insensitive' };
+    where.OR = [
+      { name: { contains: filters.search, mode: 'insensitive' } },
+      { marketHashName: { contains: filters.search, mode: 'insensitive' } },
+    ];
   }
 
   const orderBy: Record<string, string> = {};

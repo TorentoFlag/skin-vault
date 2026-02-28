@@ -12,6 +12,8 @@ const REFRESH_COOKIE_OPTIONS = {
   path: '/',
 };
 
+const allowedOrigins = env.ALLOWED_ORIGINS.split(',').map((o) => o.trim());
+
 export const steamCallback = async (req: Request, res: Response) => {
   const steamUser = req.user;
   if (!steamUser?.steamId) {
@@ -35,8 +37,17 @@ export const steamCallback = async (req: Request, res: Response) => {
   const accessToken = generateAccessToken(tokenPayload);
   const refreshToken = generateRefreshToken(tokenPayload);
 
+  // Determine which frontend to redirect to
+  const savedOrigin = req.cookies?.auth_origin as string | undefined;
+  const redirectBase = savedOrigin && allowedOrigins.includes(savedOrigin)
+    ? savedOrigin
+    : allowedOrigins[0];
+
+  // Clean up the origin cookie
+  res.clearCookie('auth_origin', { path: '/' });
+
   res.cookie('refreshToken', refreshToken, REFRESH_COOKIE_OPTIONS);
-  res.redirect(`${env.CLIENT_URL}/auth/callback?token=${accessToken}`);
+  res.redirect(`${redirectBase}/auth/callback?token=${accessToken}`);
 };
 
 export const logout = (_req: Request, res: Response) => {

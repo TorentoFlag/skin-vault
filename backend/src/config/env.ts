@@ -22,7 +22,8 @@ const envSchema = z.object({
 
   REDIS_URL: z.string().url(),
 
-  CLIENT_URL: z.string().url(),
+  SERVER_URL: z.string().url(),
+  ALLOWED_ORIGINS: z.string().min(1),
 });
 
 type Env = z.infer<typeof envSchema>;
@@ -58,7 +59,8 @@ const fallbackEnv: Env = {
   STRIPE_SECRET_KEY: process.env.STRIPE_SECRET_KEY || '',
   STRIPE_WEBHOOK_SECRET: process.env.STRIPE_WEBHOOK_SECRET || '',
   REDIS_URL: process.env.REDIS_URL || '',
-  CLIENT_URL: process.env.CLIENT_URL || 'http://localhost:5173',
+  SERVER_URL: process.env.SERVER_URL || 'http://localhost:3000',
+  ALLOWED_ORIGINS: process.env.ALLOWED_ORIGINS || 'http://localhost:5173',
 };
 
 export const env: Env = parsed.success ? parsed.data : fallbackEnv;

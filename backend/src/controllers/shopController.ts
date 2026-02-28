@@ -6,9 +6,9 @@ export const getCatalog = async (req: Request, res: Response) => {
 
   const result = await getAvailableItems(
     {
-      type: query.type as string | undefined,
-      rarity: query.rarity as string | undefined,
-      exterior: query.exterior as string | undefined,
+      type: query.type as string[] | undefined,
+      rarity: query.rarity as string[] | undefined,
+      exterior: query.exterior as string[] | undefined,
       minPrice: query.minPrice as number | undefined,
       maxPrice: query.maxPrice as number | undefined,
       search: query.search as string | undefined,
