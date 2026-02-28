@@ -9,24 +9,20 @@ const router = Router();
 
 const allowedOrigins = env.ALLOWED_ORIGINS.split(',').map((o) => o.trim());
 
-// Steam OpenID login — save origin, then redirect to Steam
+// Steam OpenID login — save origin from ?from= param, then redirect to Steam
 router.get('/steam', (req, res, next) => {
-  const origin = req.get('Referer');
-  if (origin) {
-    const originUrl = new URL(origin);
-    const originBase = originUrl.origin;
-    if (allowedOrigins.includes(originBase)) {
-      res.cookie('auth_origin', originBase, {
-        httpOnly: true,
-        secure: env.NODE_ENV === 'production',
-        sameSite: 'lax',
-        maxAge: 5 * 60 * 1000, // 5 minutes — enough for Steam login
-        path: '/',
-      });
-    }
+  const from = req.query.from as string | undefined;
+  if (from && allowedOrigins.includes(from)) {
+    res.cookie('auth_origin', from, {
+      httpOnly: true,
+      secure: true,
+      sameSite: 'none',
+      maxAge: 5 * 60 * 1000,
+      path: '/',
+    });
   }
   passport.authenticate('steam', { session: false })(req, res, next);
-}, );
+});
 
 // Steam callback — handle return from Steam
 router.get(
